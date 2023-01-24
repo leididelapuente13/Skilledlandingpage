@@ -1,0 +1,83 @@
+:root{
+    --font-family: 'Plus Jakarta Sans', sans-serif;
+    --blue-hover: #666ca3;
+    --blue: #13183f;
+    --gray-text: #83869a;
+    --main-orange: #f74780;
+    --main-pink: #ffa7c3;
+    --white: #ffffff;
+    --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+
+*{
+    font-family: var(--font-family);
+    padding: 3px;
+}
+
+/*p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 16px;
+    margin: 1rem;
+    line-height: 26px;
+    font-weight: 500;
+}*/
+
+.header__button--dark, .header__icon{
+    margin: 11px 0 0 5px;
+}
+.header__button--dark{
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    float: right;
+    padding: 10px;
+    height: 48px;
+    width: 140px;
+    font-weight: 700;
+    margin: 5px 10px; 
+}
+
+header h1{
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 6.5vh;
+}
+
+header p{
+    color: var(--gray-text);
+    margin-bottom: 10px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.header__button--neon{
+   background: var(--primary-gradient);
+   border: none;
+   font-weight: 700;
+   border-radius: 50px;
+   height: 55px;
+   width: 160px;
+   color: var(--white);
+   margin: 20px 6px;
+}
+
+.imagen__resposive{
+    display: block;
+   padding: 20px;
+   background-image: url(assets/image-hero-mobile.png);
+   background-repeat: no-repeat;
+   height: 500px;
+   width: 500px;
+   background-size: 88%;
+   margin: 11px;
+}
+
+a{
+    font-weight: 700;
+}
