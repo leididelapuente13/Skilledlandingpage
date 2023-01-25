@@ -1,4 +1,4 @@
-:root{
+:root {
     --font-family: 'Plus Jakarta Sans', sans-serif;
     --blue-hover: #666ca3;
     --blue: #13183f;
@@ -10,74 +10,185 @@
     --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
 }
 
-*{
+* {
     font-family: var(--font-family);
-    padding: 3px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-/*p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 16px;
-    margin: 1rem;
-    line-height: 26px;
-    font-weight: 500;
-}*/
-
-.header__button--dark, .header__icon{
-    margin: 11px 0 0 5px;
+body{
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    width: 100%;
+    margin: 0;
 }
-.header__button--dark{
+
+.header__icon {
+    margin: 24px 0 20px 18px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button--dark {
     border-radius: 50px;
     border: none;
     background-color: var(--blue);
     color: var(--white);
-    float: right;
     padding: 10px;
     height: 48px;
     width: 140px;
     font-weight: 700;
-    margin: 5px 10px; 
+    margin: 15px 20px;
 }
 
-header h1{
+.header__button--dark:hover {
+    background-color: var(--blue-hover);
+    cursor: pointer;
+}
+
+header h1 {
     font-weight: 700;
     color: var(--blue);
     font-size: 6.5vh;
+    margin: 18px;
 }
 
-header p{
+header p {
     color: var(--gray-text);
-    margin-bottom: 10px;
+    margin: 10px 0 5px 12px;
     padding: 10px;
     line-height: 25px;
 }
 
-.header__button--neon{
-   background: var(--primary-gradient);
-   border: none;
-   font-weight: 700;
-   border-radius: 50px;
-   height: 55px;
-   width: 160px;
-   color: var(--white);
-   margin: 20px 6px;
-}
-
-.imagen__resposive{
-    display: block;
-   padding: 20px;
-   background-image: url(assets/image-hero-mobile.png);
-   background-repeat: no-repeat;
-   height: 500px;
-   width: 500px;
-   background-size: 88%;
-   margin: 11px;
-}
-
-a{
+.header__button--neon {
+    background: var(--primary-gradient);
+    border: none;
     font-weight: 700;
+    font-size: medium;
+    border-radius: 50px;
+    height: 55px;
+    width: 170px;
+    color: var(--white);
+    margin: 20px 20px 5px 20px;
+}
+
+.header__button--neon:hover {
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        var(--primary-gradient);
+    cursor: pointer;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen__resposive {
+    background-image: url(assets/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    height: 370px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.caja-especial{
+    display: block;
+    background: var(--primary-gradient);
+    height: 120px;
+    border-radius: 12px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: x-large;
+    padding: 25px;
+    margin: 18px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section{
+    margin: 39px 20px 10px 10px;
+    background-color: var(--white);
+    height: 220px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section img{
+    margin-top: -9rem;
+    margin-bottom: 1rem;
+}
+
+section p{
+    color: var(--gray-text);
+    margin: 10px 10px;
+    font-weight: 500;
+}
+
+section h2{
+    color: var(--blue);
+    font-weight: 800;
+    font-size: large;
+    height: 2rem;
+    margin: 2px 10px;
+    font-size: 20px;
+}
+
+section:nth-last-child(1){
+    margin-bottom: 40px;
+}
+
+a {
+    color: var(--main-orange);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    font-size: large;
+}
+
+a:hover{
+    color: #ffa7c3;
+}
+
+footer {
+    background-color: var(--blue);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    margin: 45px 14px;
+    height: 25%;
+}
+
+footer button {
+    background: var(--secondary-gradient);
+    color: var(--white);
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    height: 45px;
+    width: 130px;
+    margin: 34px 20px;
+}
+
+footer button:hover {
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+    cursor: pointer;
 }
