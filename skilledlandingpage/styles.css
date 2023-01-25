@@ -26,6 +26,7 @@ body{
 
 .header__icon {
     margin: 24px 0 20px 18px;
+    height: 28px;
 }
 
 .flex-container{
@@ -51,9 +52,9 @@ body{
 }
 
 header h1 {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--blue);
-    font-size: 6.5vh;
+    font-size: 5.5vh;
     margin: 18px;
 }
 
@@ -117,12 +118,13 @@ header p {
     align-items: center;
     gap: 10px;
 }
+
 section{
     margin: 39px 20px 10px 10px;
     background-color: var(--white);
     height: 220px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 section img{
@@ -191,4 +193,70 @@ footer button:hover {
             rgba(255, 255, 255, 0.5)),
         linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px){
+    .flex-header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .header__icon{
+        margin-left: 55px;
+    }
+
+    .header-content{
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    header p{
+        width: 340px;
+    }
+
+    .imagen__resposive{
+        height: 735px;
+        width: 69%;
+        background-image: url(assets/image-hero-tablet.png);
+        background-size: cover;
+        margin-top: -45.1rem;
+        margin-left: 26rem;
+    }
+
+    .header__button--dark{
+        position: relative;
+        margin-right: 4rem;
+    }
+
+    section, section:nth-last-child(1){
+        margin: 19px 0; 
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .caja-especial{
+        width: 320px;
+        height: 280px;
+    }
+    
+    section{
+        height: 280px;
+        width: 340px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    
 }
